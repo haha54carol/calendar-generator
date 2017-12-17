@@ -19,14 +19,20 @@ import { genCalendarObj } from 'calendar-generator'
 ```javascript
 import { genCalendarObj } from 'calendar-generator'
 
-const fromDate = moment().format('YYYY-MM-DD') // 2017-12-18
-const toDate = moment(fromDate).add(5, 'days').format('YYYY-MM-DD') //2017-12-23
-    
+const fromDate = '2017-12-18' // format: 'YYYY-MM-DD
+const toDate = '2017-12-23' 
+
+
 let cObj = genCalendarObj(fromDate, toDate)
 
 ```
 
 **cObj**
+
+`before date` and `after `date` will be included. Because these date are in the same week.
+
+
+
 ```javascript
 cObj = {
    "date":{
