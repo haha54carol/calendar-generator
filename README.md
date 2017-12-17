@@ -3,10 +3,14 @@
 A simple generator of calendar object. :calendar:
 
 ## Installation
-**Work with `moment.js`.**
 
 ```
 npm install calendar-generator
+```
+or
+
+```
+yarn add calendar-generator
 ```
 ## Import
 **ES6+, Babel, Webpack, etc.. environments**
