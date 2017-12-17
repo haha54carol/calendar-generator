@@ -1,9 +1,9 @@
 # calendar-generator
 
-This library is a simple generator of calendar object. :calendar:
+A simple generator of calendar object. :calendar:
 
 ## Installation
-**This library work with `moment.js`.**
+**Work with `moment.js`.**
 
 ```
 npm install calendar-generator
