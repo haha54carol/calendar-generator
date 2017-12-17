@@ -1,6 +1,6 @@
 {
   "name": "calendar-generator",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "For easily create a calendar object",
   "main": "index.js",
   "scripts": {
