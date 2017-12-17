@@ -36,7 +36,7 @@ export const genCalendarObj = (from, to) => {
             .add(j, 'days')
             .toObject()
         if (moment(tmpDay).isSameOrBefore(end)) {
-            let disable = false
+            let disable = true
             let month = moment(tmpDay).month() + 1
             let week = moment(tmpDay).weeks()
             let dateStr = moment(tmpDay).format('YYYY-MM-DD')
@@ -51,11 +51,11 @@ export const genCalendarObj = (from, to) => {
             calendar.monthWeekDate[month][week].push(dateStr)
 
             if (moment(tmpDay).isBefore(from) || moment(tmpDay).isAfter(to)) 
-                disable = true
+                disable = false
 
 
             calendar.date[dateStr] = {
-                isDisable: disable,
+                inputRange: disable,
                 year: tmpDay.years,
                 month: tmpDay.months + 1,
                 day: tmpDay.date,
