@@ -29,7 +29,7 @@ let cObj = genCalendarObj(fromDate, toDate)
 
 **cObj**
 
-`before date` and `after `date` will be included. Because these date are in the same week.
+`before date` and `after date` will be included. Because these date are in the same week with input date range.
 
 
 
